@@ -6,7 +6,7 @@
 
 ## Graph Explanation
 
-A ROS 2 graph shows how software communicate from a publisher like some sort of sensor through some message that returns values into a subscriber which is the part that takes action
+A ROS 2 graph shows how software communicates with nodes from a publisher like some sort of sensor through some message or topic that returns values into a subscriber which is the part that takes action. An example of a node would be /course_cmd_vel_guard which is the entire program that takes in a command and does a safety check on said command (the safety checking section is the topic) which if considered safe then heads to the subscriber.
 
 ## Guided Checks
 
