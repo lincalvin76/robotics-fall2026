@@ -2,12 +2,12 @@
   "schema_version": 1,
   "lab_id": "week01_ros_foundations",
   "mission_id": "mission_1",
-  "saved_at": "2026-09-10T19:09:31.677492+00:00",
+  "saved_at": "2026-09-10T20:15:05.733703+00:00",
   "evidence": {
-    "evidence_id": "ff5b3e94b3f84ccf",
+    "evidence_id": "04336c3ce7392b0a",
     "graph": {
       "schema_version": 2,
-      "captured_at": "2026-09-10T19:09:29.569781+00:00",
+      "captured_at": "2026-09-10T20:15:05.530840+00:00",
       "nodes": [
         {
           "name": "/course_cmd_vel_guard"
@@ -25,7 +25,7 @@
           "name": "/rviz2"
         },
         {
-          "name": "/transform_listener_impl_5590fa78bd40"
+          "name": "/transform_listener_impl_56425d9dd390"
         }
       ],
       "topics": [
@@ -133,7 +133,7 @@
             "/robot_state_publisher",
             "/ros_gz_bridge",
             "/rviz2",
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ]
         },
         {
@@ -157,7 +157,7 @@
             "/robot_state_publisher",
             "/ros_gz_bridge",
             "/rviz2",
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ],
           "subscribers": []
         },
@@ -194,7 +194,7 @@
             "/ros_gz_bridge"
           ],
           "subscribers": [
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ]
         },
         {
@@ -206,7 +206,7 @@
             "/robot_state_publisher"
           ],
           "subscribers": [
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ]
         }
       ],
@@ -428,7 +428,7 @@
           ]
         },
         {
-          "name": "/transform_listener_impl_5590fa78bd40/get_type_description",
+          "name": "/transform_listener_impl_56425d9dd390/get_type_description",
           "types": [
             "type_description_interfaces/srv/GetTypeDescription"
           ]
@@ -442,23 +442,23 @@
           "angle_increment": 0.01749303564429283,
           "sample_count": 360,
           "finite_count": 327,
-          "minimum_finite_range": 0.5056060552597046
+          "minimum_finite_range": 0.5099546909332275
         },
         "/odom": {
           "frame_id": "odom",
           "child_frame_id": "base_footprint",
           "position": {
-            "x": 9.600784784034132e-09,
-            "y": -2.214038763341103e-21
+            "x": 9.600809813852506e-09,
+            "y": -2.2140536929571617e-21
           },
           "orientation": {
             "x": 0.0,
             "y": 0.0,
-            "z": -2.302542506815954e-13,
+            "z": -2.4707717624495466e-13,
             "w": 1.0
           },
-          "linear_x": -1.5385559393486315e-20,
-          "angular_z": -3.474158572722716e-19
+          "linear_x": 1.5834419663649936e-13,
+          "angular_z": -2.0959718300232238e-13
         },
         "/student_cmd_vel": null
       }
@@ -470,7 +470,7 @@
         "/robot_state_publisher",
         "/ros_gz_bridge",
         "/rviz2",
-        "/transform_listener_impl_5590fa78bd40"
+        "/transform_listener_impl_56425d9dd390"
       ],
       "topics": [
         [
@@ -577,7 +577,7 @@
             "/robot_state_publisher",
             "/ros_gz_bridge",
             "/rviz2",
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ]
         ],
         [
@@ -601,7 +601,7 @@
             "/robot_state_publisher",
             "/ros_gz_bridge",
             "/rviz2",
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ],
           []
         ],
@@ -638,7 +638,7 @@
             "/ros_gz_bridge"
           ],
           [
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ]
         ],
         [
@@ -650,7 +650,7 @@
             "/robot_state_publisher"
           ],
           [
-            "/transform_listener_impl_5590fa78bd40"
+            "/transform_listener_impl_56425d9dd390"
           ]
         ]
       ]

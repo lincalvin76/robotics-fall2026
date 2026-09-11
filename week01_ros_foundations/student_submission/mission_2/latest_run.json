@@ -1,0 +1,208 @@
+{
+  "evidence_id": "45213b627c068de1",
+  "trials": [
+    {
+      "trial_type": "straight",
+      "captured_at": "2026-09-10T20:16:05.351006+00:00",
+      "linear_x": 0.15,
+      "angular_z": 0.0,
+      "duration": 3.0,
+      "command_started_at": "2026-09-10T20:16:05.351006+00:00",
+      "zero_command_sent_at": "2026-09-10T20:16:05.351006+00:00",
+      "actual_command_duration": 3.03,
+      "duration_error": 0.03,
+      "commanded_path_length": 0.44999999999999996,
+      "expected_linear_travel": 0.44999999999999996,
+      "observed_path_length": 0.40950000000000003,
+      "start_pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "theta": 0.0
+      },
+      "end_pose": {
+        "x": 0.40950000000000003,
+        "y": 0.0,
+        "theta": 0.0
+      },
+      "displacement": 0.40950000000000003,
+      "heading_change": 0.0,
+      "completed": true,
+      "stop_sent": true,
+      "fallback_used": true,
+      "evidence_source": "representative backup model",
+      "modeled_response": {
+        "linear_response_fraction": 0.91,
+        "angular_response_fraction": 0.93,
+        "timing_overhead_seconds": 0.03
+      },
+      "stop_method": "command guard after live-trial timeout"
+    },
+    {
+      "trial_type": "rotation",
+      "captured_at": "2026-09-11T19:59:17.109918+00:00",
+      "linear_x": 0.0,
+      "angular_z": 0.5,
+      "duration": 3.0,
+      "command_started_at": "2026-09-11T19:59:17.109918+00:00",
+      "zero_command_sent_at": "2026-09-11T19:59:17.109918+00:00",
+      "actual_command_duration": 3.03,
+      "duration_error": 0.03,
+      "commanded_path_length": 0.0,
+      "expected_linear_travel": 0.0,
+      "observed_path_length": 0.00670820393249937,
+      "start_pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "theta": 0.0
+      },
+      "end_pose": {
+        "x": 0.006,
+        "y": 0.003,
+        "theta": 1.395
+      },
+      "displacement": 0.00670820393249937,
+      "heading_change": 1.395,
+      "completed": true,
+      "stop_sent": true,
+      "fallback_used": true,
+      "evidence_source": "representative backup model",
+      "modeled_response": {
+        "linear_response_fraction": 0.91,
+        "angular_response_fraction": 0.93,
+        "timing_overhead_seconds": 0.03
+      },
+      "stop_method": "command guard after live-trial timeout"
+    },
+    {
+      "trial_type": "curve",
+      "captured_at": "2026-09-11T20:02:41.612602+00:00",
+      "linear_x": 0.15,
+      "angular_z": -0.4,
+      "duration": 4.0,
+      "command_started_at": "2026-09-11T20:02:41.612602+00:00",
+      "zero_command_sent_at": "2026-09-11T20:02:41.612602+00:00",
+      "actual_command_duration": 4.03,
+      "duration_error": 0.03,
+      "commanded_path_length": 0.6,
+      "expected_linear_travel": 0.6,
+      "observed_path_length": 0.546,
+      "start_pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "theta": 0.0
+      },
+      "end_pose": {
+        "x": 0.3656784883140705,
+        "y": -0.33658927310327225,
+        "theta": -1.4880000000000002
+      },
+      "displacement": 0.49700412028860785,
+      "heading_change": -1.4880000000000002,
+      "completed": true,
+      "stop_sent": true,
+      "fallback_used": true,
+      "evidence_source": "representative backup model",
+      "modeled_response": {
+        "linear_response_fraction": 0.91,
+        "angular_response_fraction": 0.93,
+        "timing_overhead_seconds": 0.03
+      },
+      "stop_method": "command guard after live-trial timeout"
+    },
+    {
+      "trial_type": "curve_modified",
+      "captured_at": "2026-09-11T20:06:21.951435+00:00",
+      "linear_x": 0.12,
+      "angular_z": 0.6,
+      "duration": 4.0,
+      "command_started_at": "2026-09-11T20:06:21.951435+00:00",
+      "zero_command_sent_at": "2026-09-11T20:06:21.951435+00:00",
+      "actual_command_duration": 4.03,
+      "duration_error": 0.03,
+      "commanded_path_length": 0.48,
+      "expected_linear_travel": 0.48,
+      "observed_path_length": 0.4368,
+      "start_pose": {
+        "x": 0.0,
+        "y": 0.0,
+        "theta": 0.0
+      },
+      "end_pose": {
+        "x": 0.15445609398523702,
+        "y": 0.3158712350683181,
+        "theta": 2.232
+      },
+      "displacement": 0.35161246012159614,
+      "heading_change": 2.232,
+      "completed": true,
+      "stop_sent": true,
+      "fallback_used": true,
+      "evidence_source": "representative backup model",
+      "modeled_response": {
+        "linear_response_fraction": 0.91,
+        "angular_response_fraction": 0.93,
+        "timing_overhead_seconds": 0.03
+      },
+      "stop_method": "command guard after live-trial timeout"
+    }
+  ],
+  "reset_confirmed": false,
+  "check": [
+    {
+      "id": "predictions",
+      "label": "Four predictions were written before running",
+      "passed": true,
+      "actual": "4 written, 4 saved",
+      "expected": "4 written and saved"
+    },
+    {
+      "id": "trials",
+      "label": "Four motion trials completed with a stop command",
+      "passed": true,
+      "actual": 4,
+      "expected": "4 of 4"
+    },
+    {
+      "id": "motion",
+      "label": "Each trial produced the expected kind of live or modeled motion",
+      "passed": true,
+      "actual": 4,
+      "expected": "4 of 4"
+    },
+    {
+      "id": "prediction_order",
+      "label": "Each saved prediction came before its trial",
+      "passed": true,
+      "actual": 4,
+      "expected": "4 of 4"
+    },
+    {
+      "id": "limits",
+      "label": "All commands stayed within the course speed limits",
+      "passed": true,
+      "actual": "within limits",
+      "expected": "within limits"
+    },
+    {
+      "id": "modified_settings",
+      "label": "The recorded modified curve matches the selected sliders",
+      "passed": true,
+      "actual": "matches",
+      "expected": "matches"
+    },
+    {
+      "id": "timing",
+      "label": "Timing and zero-command evidence were recorded",
+      "passed": true,
+      "actual": 4,
+      "expected": "4 of 4"
+    },
+    {
+      "id": "synthesis",
+      "label": "Three evidence-based explanations are complete",
+      "passed": true,
+      "actual": 3,
+      "expected": "3 of 3"
+    }
+  ]
+}

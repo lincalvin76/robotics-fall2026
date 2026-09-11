@@ -8,6 +8,8 @@ from __future__ import annotations
 
 from collections.abc import Sequence
 
+import math
+
 
 def front_distance(
     ranges: Sequence[float],
@@ -20,6 +22,17 @@ def front_distance(
     Return ``None`` when the sector has no valid reading. Angles are measured in
     radians and the front direction is zero radians.
     """
+    valid_distance = []
+
+    for index, reading in enumerate(ranges):
+        angle = angle_min + index * angle_increment
+        if ((abs(angle) <= half_width_radians) and (math.isfinite(reading) and reading > 0)):
+            valid_distance.append(reading)
+
+    if (len(valid_distance) == 0):
+        return None
+    else:
+        return min(valid_distance)
     raise NotImplementedError("Mission 3: select and validate the front-sector readings")
 
 
