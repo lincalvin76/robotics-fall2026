@@ -1,0 +1,101 @@
+For alternating_arcs, I’d implement it as two equal 90° arcs with opposite turn directions. That gives a simple, testable pattern:
+
+First arc: turn left 90°
+Second arc: turn right 90°
+linear_x = 0.20 m/s
+angular_z = ±0.40 rad/s
+Radius = v / |ω| = 0.20 / 0.40 = 0.50 m
+Each arc lasts π/2 / 0.40 ≈ 3.927 s
+Total time ≈ 7.854 s
+Final heading change ≈ 0 rad
+Assuming ideal motion, final displacement ≈ 1.0 m
+
+That stays comfortably inside all the stated bounds.
+
+build_pattern
+
+Replace only the function with:
+
+build_pattern implementation
+def build_pattern(pattern_name: str) -> list[Segment]:
+    """Return ordered, bounded motion segments for the assigned pattern."""
+    if pattern_name == "alternating_arcs":
+        # Two 90-degree arcs with opposite curvature.
+        # v = 0.20 m/s, omega = +/-0.40 rad/s
+        # radius = v / |omega| = 0.50 m
+        linear_x = 0.20
+        angular_z = 0.40
+        quarter_turn = 3.141592653589793 / 2.0
+        duration = quarter_turn / angular_z
+
+        return [
+            Segment(
+                linear_x=linear_x,
+                angular_z=angular_z,
+                duration=duration,
+            ),
+            Segment(
+                linear_x=linear_x,
+                angular_z=-angular_z,
+                duration=duration,
+            ),
+        ]
+
+    raise ValueError(f"Unknown pattern name: {pattern_name}")
+Why this works
+
+For a constant-velocity arc:
+
+$$ R = \frac{v}{|\omega|} $$
+
+So:
+
+$$ R = \frac{0.20}{0.40}=0.50\text{ m} $$
+
+For a 90° arc:
+
+$$ t = \frac{\pi/2}{0.40} \approx 3.927\text{ s} $$
+
+The first arc turns the robot +π/2, and the second turns it −π/2, so ideally:
+
+$$ \Delta\theta = \frac{\pi}{2}-\frac{\pi}{2}=0 $$
+
+The two arcs also produce approximately 0.5 m of forward displacement each, giving about 1.0 m total distance from the starting point.
+
+This should therefore give you expected values approximately:
+
+Check	Expected
+Final distance	1.00 m
+Final angle	0 rad
+Arc radius	0.50 m
+Total duration	7.85 s
+Max linear speed	0.20 m/s
+Max angular speed	0.40 rad/s
+
+All are within your evaluator tolerances of ±0.02 m, ±0.04 rad, and ±0.02 m radius.
+
+Tests I'd run
+Pattern selection
+build_pattern("alternating_arcs") returns exactly 2 segments.
+build_pattern("something_else") raises ValueError.
+Bounds
+Every segment has abs(linear_x) <= 0.22.
+Every segment has abs(angular_z) <= 0.80.
+Every duration is <= 30.
+Total duration is <= 60.
+Arc radius
+
+Check:
+
+abs(segment.linear_x / segment.angular_z)
+
+should equal 0.50 m for both segments.
+
+Angle
+First arc: +π/2
+Second arc: −π/2
+Total: approximately 0 rad.
+Final distance
+With ideal constant-velocity integration, verify approximately 1.00 m.
+
+Important assumption: your prompt doesn't include the actual course specification for the required alternating-arc distance/angle/radius. I'm assuming the intended target is two 90° arcs of radius 0.50 m, which produces the clean 1 m forward / 0 rad final orientation result. If your course handout specifies different target values, those values should determine linear_x, angular_z, and the arc angles instead.
