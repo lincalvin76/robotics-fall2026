@@ -1,0 +1,3 @@
+# Technical synthesis
+
+An example of a robot motion program being technically correct yet still failing as a part of a sociotechnical system is when a robot runs into some sort of movement issue, where some values returns none and the safest and technically correct option would be to stop. However in a sociotechnical system this could fail because of the space and sections that this robot could be blocking. By suddenly stopping because of a safety check it could actually cause more harm as it's an unpredictable action especially to humans when a robot suddenly stops in the middle of their pathing. Which could lead to humans being surprised or suddenly tripping over the robots or even just having the robots block their way.

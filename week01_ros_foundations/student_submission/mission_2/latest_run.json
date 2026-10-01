@@ -1,152 +1,120 @@
 {
-  "evidence_id": "45213b627c068de1",
+  "evidence_id": "af343fe6a6eefb98",
   "trials": [
     {
       "trial_type": "straight",
-      "captured_at": "2026-09-10T20:16:05.351006+00:00",
+      "captured_at": "2026-09-11T21:31:56.791219+00:00",
       "linear_x": 0.15,
       "angular_z": 0.0,
       "duration": 3.0,
-      "command_started_at": "2026-09-10T20:16:05.351006+00:00",
-      "zero_command_sent_at": "2026-09-10T20:16:05.351006+00:00",
-      "actual_command_duration": 3.03,
-      "duration_error": 0.03,
+      "command_started_at": "2026-09-11T21:31:53.264279+00:00",
+      "zero_command_sent_at": "2026-09-11T21:31:56.272367+00:00",
+      "actual_command_duration": 3.008086422000133,
+      "duration_error": 0.008086422000133098,
       "commanded_path_length": 0.44999999999999996,
       "expected_linear_travel": 0.44999999999999996,
-      "observed_path_length": 0.40950000000000003,
+      "observed_path_length": 0.38512499999996713,
       "start_pose": {
-        "x": 0.0,
-        "y": 0.0,
-        "theta": 0.0
+        "x": 9.6008158673073e-09,
+        "y": -2.214049648534529e-21,
+        "theta": -5.02431923216449e-13
       },
       "end_pose": {
-        "x": 0.40950000000000003,
-        "y": 0.0,
-        "theta": 0.0
+        "x": 0.38512500960076956,
+        "y": 1.173704006256392e-12,
+        "theta": -4.579669984953974e-13
       },
-      "displacement": 0.40950000000000003,
-      "heading_change": 0.0,
+      "displacement": 0.3851249999999537,
+      "heading_change": 4.4464924721051524e-14,
       "completed": true,
-      "stop_sent": true,
-      "fallback_used": true,
-      "evidence_source": "representative backup model",
-      "modeled_response": {
-        "linear_response_fraction": 0.91,
-        "angular_response_fraction": 0.93,
-        "timing_overhead_seconds": 0.03
-      },
-      "stop_method": "command guard after live-trial timeout"
+      "stop_sent": true
     },
     {
       "trial_type": "rotation",
-      "captured_at": "2026-09-11T19:59:17.109918+00:00",
+      "captured_at": "2026-09-11T21:32:33.673149+00:00",
       "linear_x": 0.0,
       "angular_z": 0.5,
       "duration": 3.0,
-      "command_started_at": "2026-09-11T19:59:17.109918+00:00",
-      "zero_command_sent_at": "2026-09-11T19:59:17.109918+00:00",
-      "actual_command_duration": 3.03,
-      "duration_error": 0.03,
+      "command_started_at": "2026-09-11T21:32:30.145365+00:00",
+      "zero_command_sent_at": "2026-09-11T21:32:33.156490+00:00",
+      "actual_command_duration": 3.011125724000067,
+      "duration_error": 0.011125724000066839,
       "commanded_path_length": 0.0,
       "expected_linear_travel": 0.0,
-      "observed_path_length": 0.00670820393249937,
+      "observed_path_length": 4.2393695440832084e-05,
       "start_pose": {
-        "x": 0.0,
-        "y": 0.0,
-        "theta": 0.0
+        "x": 0.3851250096002966,
+        "y": 1.1737040062568513e-12,
+        "theta": -3.1630947869336304e-12
       },
       "end_pose": {
-        "x": 0.006,
-        "y": 0.003,
-        "theta": 1.395
+        "x": 0.3850976271819347,
+        "y": -2.0456047853731935e-05,
+        "theta": 1.334506816602891
       },
-      "displacement": 0.00670820393249937,
-      "heading_change": 1.395,
+      "displacement": 3.417962517582845e-05,
+      "heading_change": 1.334506816606054,
       "completed": true,
-      "stop_sent": true,
-      "fallback_used": true,
-      "evidence_source": "representative backup model",
-      "modeled_response": {
-        "linear_response_fraction": 0.91,
-        "angular_response_fraction": 0.93,
-        "timing_overhead_seconds": 0.03
-      },
-      "stop_method": "command guard after live-trial timeout"
+      "stop_sent": true
     },
     {
       "trial_type": "curve",
-      "captured_at": "2026-09-11T20:02:41.612602+00:00",
+      "captured_at": "2026-09-11T21:33:02.338752+00:00",
       "linear_x": 0.15,
       "angular_z": -0.4,
       "duration": 4.0,
-      "command_started_at": "2026-09-11T20:02:41.612602+00:00",
-      "zero_command_sent_at": "2026-09-11T20:02:41.612602+00:00",
-      "actual_command_duration": 4.03,
-      "duration_error": 0.03,
+      "command_started_at": "2026-09-11T21:32:57.802534+00:00",
+      "zero_command_sent_at": "2026-09-11T21:33:01.813653+00:00",
+      "actual_command_duration": 4.01110904899997,
+      "duration_error": 0.011109048999969673,
       "commanded_path_length": 0.6,
       "expected_linear_travel": 0.6,
-      "observed_path_length": 0.546,
+      "observed_path_length": 0.5245681504970023,
       "start_pose": {
-        "x": 0.0,
-        "y": 0.0,
-        "theta": 0.0
+        "x": 0.38509762718230467,
+        "y": -2.0456048121686288e-05,
+        "theta": 1.3345068165989882
       },
       "end_pose": {
-        "x": 0.3656784883140705,
-        "y": -0.33658927310327225,
-        "theta": -1.4880000000000002
+        "x": 0.7817204722456075,
+        "y": 0.2752695107337174,
+        "theta": -0.09405098107607297
       },
-      "displacement": 0.49700412028860785,
-      "heading_change": -1.4880000000000002,
+      "displacement": 0.48279835028389934,
+      "heading_change": -1.4285577976750612,
       "completed": true,
-      "stop_sent": true,
-      "fallback_used": true,
-      "evidence_source": "representative backup model",
-      "modeled_response": {
-        "linear_response_fraction": 0.91,
-        "angular_response_fraction": 0.93,
-        "timing_overhead_seconds": 0.03
-      },
-      "stop_method": "command guard after live-trial timeout"
+      "stop_sent": true
     },
     {
       "trial_type": "curve_modified",
-      "captured_at": "2026-09-11T20:06:21.951435+00:00",
+      "captured_at": "2026-09-11T21:33:35.148290+00:00",
       "linear_x": 0.12,
       "angular_z": 0.6,
       "duration": 4.0,
-      "command_started_at": "2026-09-11T20:06:21.951435+00:00",
-      "zero_command_sent_at": "2026-09-11T20:06:21.951435+00:00",
-      "actual_command_duration": 4.03,
-      "duration_error": 0.03,
+      "command_started_at": "2026-09-11T21:33:30.620057+00:00",
+      "zero_command_sent_at": "2026-09-11T21:33:34.638154+00:00",
+      "actual_command_duration": 4.018095526000025,
+      "duration_error": 0.01809552600002462,
       "commanded_path_length": 0.48,
       "expected_linear_travel": 0.48,
-      "observed_path_length": 0.4368,
+      "observed_path_length": 0.425583090037051,
       "start_pose": {
-        "x": 0.0,
-        "y": 0.0,
-        "theta": 0.0
+        "x": 0.7817204722450837,
+        "y": 0.2752695107339279,
+        "theta": -0.09405098107327452
       },
       "end_pose": {
-        "x": 0.15445609398523702,
-        "y": 0.3158712350683181,
-        "theta": 2.232
+        "x": 0.9699745304839927,
+        "y": 0.5699481507482572,
+        "theta": 2.0684853867598316
       },
-      "displacement": 0.35161246012159614,
-      "heading_change": 2.232,
+      "displacement": 0.34967855428109007,
+      "heading_change": 2.162536367833106,
       "completed": true,
-      "stop_sent": true,
-      "fallback_used": true,
-      "evidence_source": "representative backup model",
-      "modeled_response": {
-        "linear_response_fraction": 0.91,
-        "angular_response_fraction": 0.93,
-        "timing_overhead_seconds": 0.03
-      },
-      "stop_method": "command guard after live-trial timeout"
+      "stop_sent": true
     }
   ],
-  "reset_confirmed": false,
+  "reset_confirmed": true,
   "check": [
     {
       "id": "predictions",

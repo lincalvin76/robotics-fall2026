@@ -5,6 +5,30 @@
 - Name: Calvin Lin
 - Email: calvin.lin80@login.cuny.edu
 
+## final.architecture_evidence
+
+The node is reactive because it makes a decision instantly based on what the robot's sensor readings are and decides if it should move or stop. For it to become a hybrid system, it would need to have some sort of planning. So instead of constantly making decisions of moving forward step by step it should plan ahead and move a certain amount, this would make it a hybrid system as it's not reacting based of new information coming it but instead planning ahead.
+
+## final.course_reflection
+
+This activity made me think a lot about the safety and difficulties that it robotics come with and actually increases my interests in robotics and coding because it poses as a challenge to see how I could optimize a robot's actions while maintaining safety concerns. The activity increased my motivation and want to try and create some sort of autonomous hybrid robot as it could help relieve some everyday tasks to make life simpler, such as a moving trash can. The activity itself was just really interesting especially the way it connected the code with an actual visual representation, being able to see the robot move and do different actions based on the parameters was really interesting to me. The activity itself was a bit dependent on having a relatively good computer which made it a bit difficult as there were some parts that just wouldn't detect correct work simply because it timed out, some of these were fixed however there are still some parts that don't work such as mission 3 timing out after 30 seconds for the coding section. In the end I just decided to reinstall everything on a better computer but it was a bit unfortunate. Other than that the activity was pretty interesting and very informative.
+
+## final.hardware_next
+
+Things I would check before using the behavior on hardware would be sudden moving obstacles as not all obstacles are always still or even a way to deal with delayed readings as there could be many reasons as to why some information is coming in slower.
+
+## final.middleware_debugging
+
+The ROS graph would help diagnose a command that never reaches the robot because you could trace the command's path based on the connections. We could check the publishers and subscribers of each node to see if something is missing or just to even see if the node exists.
+
+## final.system_synthesis
+
+Robotics software is difficult because it requires several different components to work together correctly, safely, and quickly. If a certain part does not work correctly than it could ruin the work of other components and if it's not safe it could lead to problems or injuries. I implemented a Reactive based architecture where it receives sensor data and immediately makes a decision on whether it should move or not. Now the benefit of this is that it has really fast response however it does not tell the robot what to do after it get's stopped. Compared to other Architecture's where it could make out plans or change their settings if some sort of conflict occurs. The ROS 2 middleware connected multiple components through communication relationships. Examples of these are the supplied ROS node sending lidar data into /scan and then the student decision program subscribing to this topic to use these measurements. Afterwards the student program publishing the movement data to the course guard which then checks if this command is actually safe and allowed before either stopping the command from going through or sending the instructions back to the node that decides on the actions. Finally the action node sends the actual actions to the robot based on whatever message it needs for the action. Timing or invalid data could have affected safety because if there were delays in the timing then the robot could move too far and actually run into an obstacle which is a safety issue or having invalid data, if we decided to continue moving if our measurement was empty there's the possibility that we run into something that we assumed was not there. That's the reason why the command guard is needed and is our layer that could restrict unsafe motion since it's one of the final checks that could reject a unsafe movement or send the decision to the robot.
+
+## final.timing_evidence
+
+Robot speed and robot delay affected my understanding of robot safety because you can't just make a robot super fast and expect it to stop almost immediately after calling it, there's also the case where delay could actually affect the ending result from what is expected which could cause accidents such as stopping too late and crashing into an obstacle.
+
 ## mission_1.command_path_explanation
 
 /student_cmd_vel and /cmd_vel are separte because when a student proposes a command it needs a safety check in case of any incorrect parameters or issues it may have. So when a commands proposed it travels to the /course_cmd_vel_guard which checks the safety of the proposed command  and if it's good then it sends it to the final /cmd_vel to take action.
@@ -39,11 +63,11 @@ For the very first trial the backup motion results are basically the same with m
 
 ## mission_2.prediction_locks
 
-{'straight': '2026-09-09T17:32:12.912810+00:00', 'rotation': '2026-09-11T19:58:22.738983+00:00', 'curve': '2026-09-11T20:01:35.726739+00:00', 'curve_modified': '2026-09-11T20:05:26.162637+00:00'}
+{'curve': '2026-09-11T20:01:35.726739+00:00', 'curve_modified': '2026-09-11T20:05:26.162637+00:00', 'rotation': '2026-09-11T19:58:22.738983+00:00', 'straight': '2026-09-09T17:32:12.912810+00:00'}
 
 ## mission_2.predictions
 
-{'rotation': "The robot's position will not change while it's direction will be 1.50 radians to the left", 'straight': 'I predict the robot will be 0.45 meters away from its starting point', 'curve': "I predict a small right curve because it'll be moving forward while turning right ever so slightly by -0.40 radians each second", 'curve_modified': "This curve would be a bit wider as its radius is larger than the previous trial as well as go left instead of right because it's a positive number"}
+{'curve': "I predict a small right curve because it'll be moving forward while turning right ever so slightly by -0.40 radians each second", 'curve_modified': "This curve would be a bit wider as its radius is larger than the previous trial as well as go left instead of right because it's a positive number", 'rotation': "The robot's position will not change while it's direction will be 1.50 radians to the left", 'straight': 'I predict the robot will be 0.45 meters away from its starting point'}
 
 ## mission_2.safety_explanation
 
@@ -51,15 +75,15 @@ The command guard checks if the speed is too high and if it is, it refuses to se
 
 ## mission_3.data_to_command
 
-
+The 2 functions turn a list of LiDAR distances into a move/stop command by first detecting if there's anything in front of the robot using the angles and half-front width view. If our list is empty and there's nothing then we can decide on constantly moving. However if the list is not empty and there is an obstacle in the way, we would check that distance and stop right before it based on the stop_distance, but if we haven't hit that stop_distance range yet and can still move forward than we will continue moving forward with a maximum speed of 0.18 for safety reasons.
 
 ## mission_3.missing_data_safety
 
-
+The robot stops when there's no valid front measurement because it does not know if the path is clear or not. It could've received a nan which is just an invalid or unusable number but there could still be an obstacle ahead. Therefore the safest option is to stop moving when its unclear if the path is truly clear or not.
 
 ## mission_3.system_layers
 
-
+The supplied ROS node, decision functions, and command guard work together by collecting data, making decisions based off that data, and giving it a safety check before running it fully.  In this example it was done through the ROS node collecting the LiDAR data and sending it to the decision functions that determined if there were obstacles or not, and the command guard determining if it can move or not based on certain conditions, like is there an object, do we even have a distance, what should our maximum speed be, etc.
 
 ## part_1.activity
 
