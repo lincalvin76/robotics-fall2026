@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-01T11:12:53",
+  "mission_id": "mission_1",
+  "student": {
+    "name": "Calvin Lin",
+    "student_id": "24327480",
+    "section": ""
+  },
+  "explanations": {
+    "prediction": "Having too little Kp would likely cause the arm to move too slowly and too little Kd would cause the arm to have a larger offset when it tries to reach it's target goal.",
+    "tuning_analysis": "I predicted that with a low Kp and low Kd, the arm would react super slowly and have a huge offset and the results in the actual test are similar, where the shoulder sometimes reaches the target but tends to overshoot and take too long to respond the overshooting. Gravity compensation seems to change how quickly it takes for the arm to brake or slow down so it doesn't overshoot it's target as much. This works exceptionally well when combined with a stiffer tuning of High Kp and High Kd."
+  },
+  "params": {
+    "activity": "two_link_arm_pid_tuning",
+    "kp1": 12.2,
+    "ki1": 1.4,
+    "kd1": 1.85,
+    "kp2": 16,
+    "ki2": 0.9,
+    "kd2": 1.2,
+    "gravityCompensation": false
+  },
+  "metrics": {
+    "completed": true,
+    "posesHeld": 3,
+    "posesRequired": 3
+  },
+  "checkin": {
+    "note": "I predicted that with a low Kp and low Kd, the arm would react super slowly and have a huge offset and the results in the actual test are similar, where the shoulder sometimes reaches the target but tends to overshoot and take too long to respond the overshooting. Gravity compensation seems to change how quickly it takes for the arm to brake or slow down so it doesn't overshoot it's target as much. This works exceptionally well when combined with a stiffer tuning of High Kp and High Kd.",
+    "choice": "",
+    "complete": true
+  },
+  "csv_files": {},
+  "activity_gifs": [
+    "latest_arm_tuning.gif"
+  ]
+}

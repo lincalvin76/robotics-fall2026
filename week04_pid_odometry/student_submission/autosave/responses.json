@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "saved_at": "2026-10-01T13:44:30",
+  "identity": {
+    "name": "Calvin Lin",
+    "student_id": "24327480",
+    "section": ""
+  },
+  "checkins": {
+    "m3_prediction": "Increasing forward speed may cause crashes before the brakes can toggle, especially if there's slipping which would still cause the robot to move too far and overshoot even if it brakes. Same for having too little derivative, it would not brake fast enough based on it's error, and would overshoot causing possible crashes. It would also make tracking estimates become way behind compared to the actual positioning.",
+    "m3_technical": "I predicted that increasing speed would make overshoots a lot and that's exactly what happened, it overshot the line i drew and charged straight into pedestrians, The next route point becomes a heading command because the robot constantly checks its own position and compares it's heading position to where the next route point is, based on where the route point is relative to the robot, it would turn to face that route point. PID changes steering by adjusting speed based on the error from waypoint and fixes overshooting with a high enough Kd value, inaccurate wheel radius can make a well-tuned controller follow the wrong physical path because the odometry would think it's in a different spot meaning all the controller movements could be done way later or way earlier than it should because the sensor is either ahead or behind.",
+    "m3_human": "The most consequential failure for a pedestrian would be the robot failing to stop or slow then when getting near a pedestrian, A clearance and speed trade off could be as speed get's higher we increase the clearance range, so the range around pedestrians so we stop way earlier, and as we slow down we can also decrease the clearance range.  Usually the safety testers should be the one's responsible for verifying that decision before deployment because they want to make sure that the robot doesn't run into any accidents and that the code values should be safe."
+  },
+  "explanations": {
+    "mission_3": {
+      "technical_analysis": "I predicted that increasing speed would make overshoots a lot and that's exactly what happened, it overshot the line i drew and charged straight into pedestrians, The next route point becomes a heading command because the robot constantly checks its own position and compares it's heading position to where the next route point is, based on where the route point is relative to the robot, it would turn to face that route point. PID changes steering by adjusting speed based on the error from waypoint and fixes overshooting with a high enough Kd value, inaccurate wheel radius can make a well-tuned controller follow the wrong physical path because the odometry would think it's in a different spot meaning all the controller movements could be done way later or way earlier than it should because the sensor is either ahead or behind.",
+      "human_centered_analysis": "The most consequential failure for a pedestrian would be the robot failing to stop or slow then when getting near a pedestrian, A clearance and speed trade off could be as speed get's higher we increase the clearance range, so the range around pedestrians so we stop way earlier, and as we slow down we can also decrease the clearance range.  Usually the safety testers should be the one's responsible for verifying that decision before deployment because they want to make sure that the robot doesn't run into any accidents and that the code values should be safe."
+    }
+  },
+  "activity_gifs": {
+    "mission_1": [
+      "latest_arm_tuning.gif"
+    ],
+    "mission_2": [
+      "latest_odometry_test.gif"
+    ],
+    "mission_3": [
+      "latest_drive.gif"
+    ]
+  }
+}
