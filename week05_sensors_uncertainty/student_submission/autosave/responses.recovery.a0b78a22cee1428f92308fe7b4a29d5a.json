@@ -1,0 +1,73 @@
+{
+  "checked_evidence_ids": {
+    "mission_1": "1320cd0681ce8ffa"
+  },
+  "completed_missions": [
+    "mission_1"
+  ],
+  "content_version": 2,
+  "identity_locked": true,
+  "lab_id": "week05_sensors_uncertainty",
+  "legacy_evidence": {},
+  "mission_2_attempts": [],
+  "mission_2_controls": {
+    "alpha": 0.35,
+    "method": "Raw/hold last",
+    "weight_a": 0.25,
+    "window": 5
+  },
+  "mission_3_attempts": {},
+  "mission_3_controls": {},
+  "mission_3_results": {},
+  "prediction_locks": {
+    "mission_1": {
+      "settings": {
+        "seed": 233460110
+      },
+      "text": "For biased readings, the mean would be way further compared to the average amount for the readings, The variance would not change but there would definitely be more bias.  As for noisy readings, the readings may vary a lot more from each other meaning there's a lot more different points , the mean could be slightly different but would stay relatively the same as a non noisy sensor. Lot less bias would be seen."
+    }
+  },
+  "responses": {
+    "concepts.observation": "Increasing the noise causes the sensor readings to be more scattered and causes it to oscillate and give many different distance results, increasing the bias causes the truth line to move which determines how often the results were actually the correct distance away.",
+    "mission_1.bias": "0",
+    "mission_1.bias_vs_variance": "Looking at the statistics it seems like the bias is normal because it goes along the average of all the points but the variance is very low since there's not a lot of differing points/readings leading to a lot of the numbers being the exact same. Bias describes how far the truth is from the data while variance describes how different the data is from each other.",
+    "mission_1.dropouts": "6",
+    "mission_1.mean": "2",
+    "mission_1.median": "2",
+    "mission_1.more_samples": "More samples may not necessarily remove tis sensor's main problem because there's just not a lot of noise or variance meaning even if more samples were added it would likely still be the same number and nothing much would change.",
+    "mission_1.outliers": "1",
+    "mission_1.prediction": "For biased readings, the mean would be way further compared to the average amount for the readings, The variance would not change but there would definitely be more bias.  As for noisy readings, the readings may vary a lot more from each other meaning there's a lot more different points , the mean could be slightly different but would stay relatively the same as a non noisy sensor. Lot less bias would be seen.",
+    "mission_1.prediction_draft": "For biased readings, the mean would be way further compared to the average amount for the readings, The variance would not change but there would definitely be more bias.  As for noisy readings, the readings may vary a lot more from each other meaning there's a lot more different points , the mean could be slightly different but would stay relatively the same as a non noisy sensor. Lot less bias would be seen.",
+    "mission_1.profile": "quantized",
+    "mission_1.robot_consequence": "If the robot used these measurements for determining when to brake, it would brake 2m away a majority of the times but there are outliers that could cause it to suddenly brake way earlier than expected, the consequence for this would be a human possibly bumping into the robot while following it and having it stop all of a sudden.",
+    "mission_1.variance": "0.004",
+    "mission_2.comparison": "",
+    "mission_2.fusion_choice": "",
+    "mission_2.manual_average": "",
+    "mission_2.manual_fusion": "2.25",
+    "mission_2.manual_median": "2.2",
+    "mission_2.prediction_draft": "",
+    "mission_2.responsiveness": ""
+  },
+  "reviewed_walkthroughs": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "schema_version": 2,
+  "stage": "mission_2",
+  "student": {
+    "course_id": "CSCI 39536",
+    "email": "calvin.lin80@login.cuny.edu",
+    "name": "Calvin Lin"
+  },
+  "updated_at": "2026-10-09T18:50:22.061301+00:00",
+  "visited_stages": [
+    "intro",
+    "concepts",
+    "mission_1",
+    "mission_2"
+  ],
+  "walkthrough_index": 0
+}

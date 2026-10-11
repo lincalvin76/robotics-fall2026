@@ -1,0 +1,37 @@
+{
+  "files": {
+    "autosave/responses.json": "1381c5f0453b5f8e0107716f59d178f261a918e327e0250c5b349d3c397a56b1",
+    "autosave/responses.md": "74eaa5109adf78411cea90cc37accf82ac23808f7f5bd5c7fb290eb3c1f3758d",
+    "autosave/responses.recovery.0bd4fb4e5c7e412da60a98b58d1985ed.json": "1bcf50d0b6223ba40cc1507099a3331de2f042fde6cefca18d324f3185126f5e",
+    "autosave/responses.recovery.946c079860a0445a8c0f76b0a2897bf1.json": "b82ee6eaf6ce7fd9642a5220fac82823fef5aec8cdb9d9e117d2825cd55ff0e2",
+    "autosave/responses.recovery.a0b78a22cee1428f92308fe7b4a29d5a.json": "78d1f37b7d31e2b655b98aea3599de7d5cd98b9e45ddf2482d50756656ce3017",
+    "final_reflection.md": "5e00fc4f005836cb9b81c20f54a4252b1c5d2ef38d34e47ba8387c518747333e",
+    "final_synthesis.md": "e4134d2bf37776796875ab779aaac51f191786f794143e29ae2ef9552bb82796",
+    "mission_1/evidence.png": "742c4d8d05d5e7834f881d916089e4be2840ceb5618e9a1f99166a71e6eb7feb",
+    "mission_1/explanation.md": "917541573a314d2627e463dd6f53ea53cd92969ad32085c554d0b3b395e5fafc",
+    "mission_1/measurements.csv": "7bbec5d37ca30e4522aafca0892a82fa76c96f87dccbcbb9e8a4cb9c1fecd661",
+    "mission_1/submission.json": "4814138439e82577cfdcd47d482c615c3b581f86fc1425ef0f2f08144ef332fb",
+    "mission_2/evidence.png": "0c60f18bcf10a6ae50e35d7701f378884cccc99a7661dec73b4068fc73188f42",
+    "mission_2/explanation.md": "9147584b9f488e1b2669b43abfcea71504721042a60e1a8cceda01599012aaaf",
+    "mission_2/measurements.csv": "a4ae56a5b3e4ff1ff1248c2d7e3c31d182bfb33b0b2b3a7b9c5bad550f403435",
+    "mission_2/submission.json": "556e1dba0a577fbaab34165eb2c13417a463dbbe8261e23f16588159d8ef3e44",
+    "mission_3/explanation.md": "ff002c2490066f572423298633c76d485e4ba44d5c94b6bc32759d569abbb459",
+    "mission_3/measurements.csv": "2e63f8dce8e3b5c854a80c9a00328c93bd98c6560c0726a69966e0fd70fb586c",
+    "mission_3/submission.json": "f1ff9c0c24f2d0549abea95d4b722caf602f6a4f26070b3601b3d5b42a5c39af",
+    "student.json": "26ddc770326e34be030bdfd46b31af60b4e97813eb048caa78d014d15dff50cb"
+  },
+  "generated_at": "2026-10-11T21:04:49.281743+00:00",
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_signatures": {
+    "mission_1": "1320cd0681ce8ffa",
+    "mission_2": "d9696b8c871c6fe5",
+    "mission_3": "ce992cc22f6b5527"
+  },
+  "response_signature": "a7d3b7edab59d9c7",
+  "schema_version": 2,
+  "student": {
+    "course_id": "CSCI 39536",
+    "email": "calvin.lin80@login.cuny.edu",
+    "name": "Calvin Lin"
+  }
+}
