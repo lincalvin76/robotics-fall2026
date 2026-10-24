@@ -1,0 +1,44 @@
+# Week 6: SLAM and Mapping
+
+- name: Calvin Lin
+- email: calvin.lin80@login.cuny.edu
+
+## final.course_reflection
+
+This activity was pretty interesting and simple to understand since it was mainly just testing how a robot's lidar sensor work and being able to move the robot around a building and creating a sensor map felt like using an actual robot to detect the layout of a building. This definitely increased my motivation as it was interesting how the robot had to move around, when you had to stop or move and how much you should be turning each time. It was a bit complicated to get used to the initial robot's moving however once I got the hang of it, it wasn't terrible. The only weird part about this activity was how the Rviz rotated a part of my map instead of just keeping it as is causing the map to look incomplete and spliced together with something else but being able to see how the coverage worked was pretty cool.
+
+## final.synthesis
+
+The robot can tell the general perimeter about the TrutleBot3 House from both maps assuming that the RViz was connected properly, since currently in both of my maps there's this weird cut that did not show the map in it's entirety all connected together. In the first route, I only used the left wall cover which reavels the general perimeter but left huge unknown gaps in the middle of some of the larger rooms. As for the 2nd route I used the same method but this time I actually covered the centers of the room as well which made the 2nd map a lot clearer, Some issues however were the bias in the times as for the first map, I was still learning and attempting to figure out how to move the robot which made me take longer to explore the entire map, however in the 2nd route, I already learned the controls so less time was spent learning which allowed for a faster time even though I was searching for more information. Some other issues that occurred were the positions of certain obstacles like tables. The tables themselves would be obstacles for humans however the robot was short enough where it could actually travel underneath the table resulting in only the legs being seen as obstacles and nothing else. Map2 however would still be more trustworthy as it simply has coverage of basically the entire house with no unknown gaps.
+
+## mission_1.drift_and_revisit
+
+In the mapping when we returned back to the very start we revisted the front door as well as the wall of the middle room and it seem's like the wall had created a slight double as there is a visible extra black line that's slightly further away from our initial reading of the gray barred wall.
+
+## mission_1.limitations
+
+For this map, the right side had a bit of an issue where I may have resetted gazebo and the turtle disappeared but forgot to reset the rviz. Had to reset the turtle because it bumped into a wall and just kept spinning out and falling over. The actual map is on the left side with a bit of interesction but the area that remained poorly was the middle section of the bigger rooms mainly the left large room and the room on the right that had a table shown in the bottom left section. Since I was only hugging the left wall the camera did not actually look towards the middle and only looked at the wall edges leaving the center of the room undocumented.
+
+## mission_1.route.original_prediction
+
+The route that the robot will be taking will be just hugging the left most wall, a place that will be revisited will be the very front door, map coverage will be weak on any middle area's away from walls, may not be able to tell if there's an obstacle there or not.
+
+## mission_1.route.prediction_draft
+
+The route that the robot will be taking will be just hugging the left most wall, a place that will be revisited will be the very front door, map coverage will be weak on any middle area's away from walls, may not be able to tell if there's an obstacle there or not.
+
+## mission_2.comparison
+
+(Not sure why map 2 rotated the top/right part, basically the middle room slot is just the right most spot of the upper room) Mission 1 took 24 minutes while Mission 2 took 20 minutes, The known area covered in mission 1 was 88.03 while the known area in mission 2 was 110.69, meaning that route 2 gave better coverage for the time spent. This half supported my prediction of covering more place but it was actually faster. I believe however there's a bit of bias to this as when I did the first map, I was learning how the movement worked and the 2nd time I had more experience so I was able to actually travel a lot faster. Assuming if the training level was the same, the tradeoff for faster speed would be lower map quality and slower speed being better map quality under normal circumstances.
+
+## mission_2.map_choice
+
+Assuming both of the maps were stored properly and didn't have the weird glitches, I would trust the 2nd map because looking at it there's a lot more details, it shows obstacles that may be blocking certain area's however not all of them. it does show every single room very clearly however there are some part's it can't see like tables as the robot could travel underneath it and The drawers are just the edge lines even though you can't actually cross into those empty spaces between each line. Limitation is just know what is an obstacle and what isn't an obstacle, some obstacles are easy to tell and some aren't. Example being the circular trash cans being easy while the table and the shelves aren't really visible.
+
+## mission_2.strategy.original_prediction
+
+Want to take the same route of hugging the left wall and ending at the front door however this time, In each of the larger rooms we will explore the middle area's as well before moving on. This will produce a clearer map but will take longer because we're spending time clearing the middle as well now.
+
+## mission_2.strategy.prediction_draft
+
+Want to take the same route of hugging the left wall and ending at the front door however this time, In each of the larger rooms we will explore the middle area's as well before moving on. This will produce a clearer map but will take longer because we're spending time clearing the middle as well now.
