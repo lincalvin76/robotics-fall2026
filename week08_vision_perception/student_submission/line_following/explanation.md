@@ -1,0 +1,7 @@
+# line_following
+
+## comparison
+Between the saved practice and the track attempts, the one setting that I changed is the gain where with a higher amount in both the line and the curved track they both tend to oscillate a lot non stop basically being the exact same, however with a slightly lower gain there is a more visible difference. The straight one does one slight turn based on the graph initially before smoothing out for the rest of the line indicating a straight line movement which is what it was doing, however for the curved sergment with the same gain, there were a lot more turns espcially tiny spikes when doing any lines that were not straight not just the turn's alone. The mask basically look the exact same with the practice being exactly and the curved track being slightly ahead when the gain was higher. The amount of oscillation is proof that the gain was changed because gain directly affects how strong the steering correction should be, the stronger it is the more it would've had to readjust.
+
+## limits
+One stop or failure from my attempts was when the robot didn't move at all after I ran the controller, I wasn't sure why initially but eventually found out the reason was because everytime the simulator is resetted it defaults to being paused as well. For a real delivery robot around people, some tests with actual moving objects that could cross into the path would be necessary because it should be able to stop ahead of time in case of an obstacle and either move around it or wait for it to cross before moving.

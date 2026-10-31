@@ -1,0 +1,7 @@
+# mission_2
+
+## comparison
+For a normal condition, classical had 2 correct boxes and 1 false box and 0 missed mugs, while learned had 2 correct boxes and 0 false boxes and 0 missed mugs. Dim condition had 0 correct boxes 2 false boxes  and 2 missed mugs for classical, and 2 correct boxes and 0 false boxes and 0 missed mugs for learned. Occluded for classical had 2 correct boxes 1 false box and 0 missed mugs, and learned had 0 correct boxes and 0 false boxes, with 2 missed mugs.  The main differences for locating the mug was definitely the occluded condition where the learned model struggled to identify the mug when there was an occlusion in both occluded 1 and occluded 2, there was no prediction from the learning model however with the classical model it did have a prediction but it did not identify the mug itself.
+
+## choice
+I believe the learned detector is better for further testing because it had better rates of identifying boxes and not giving out any false positives, In normal_1 the mask IoU looks over the entire mug with the handle included however with the learned version it specifically selects out the cup, whereas with classical it has a near perfect IoU however does not identify the mug as a cup/mug. A detailed foreground mask does not identify the requested mug because it only tells you which pixels are in the foreground, but it doesn't know which pixel is what, if the handle is the entire mug, if just the left side is a cup, etc. One important limit of this small image test is how it doesn't test other mugs with varying colors.

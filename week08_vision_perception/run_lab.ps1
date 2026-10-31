@@ -8,7 +8,7 @@ if (-not (Test-Path -LiteralPath $Lab7Python)) {
     }
 }
 if (-not (Test-Path -LiteralPath $Lab7Python)) { throw 'Install Python 3.12 or newer.' }
-& $Lab7Python -c 'import sys; sys.exit(0 if sys.version_info >= (3,12) else "The lab virtual environment needs Python 3.12 or newer.")'
+& $Lab7Python -c 'import sys; sys.exit(0 if sys.version_info >= (3,12) else 1)'
 if ($LASTEXITCODE -ne 0) { throw 'Preserve submissions before replacing only the lab virtual environment.' }
 & $Lab7Python -m pip install -r (Join-Path $Lab7Root 'requirements.txt')
 if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed. The guide was not started.' }
