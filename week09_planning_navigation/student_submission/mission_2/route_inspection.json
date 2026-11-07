@@ -1,0 +1,14 @@
+{
+  "run_id": "constrained_nav2_0_baseline_9d68a841f9",
+  "map": "constrained",
+  "planner": "nav2",
+  "sample": 0,
+  "point": {
+    "t": 2.802,
+    "x": -3.87499999999997,
+    "y": -2.875000000000257,
+    "speed_mps": 5.4565714870050864e-14
+  },
+  "tracking_error_m": 5.413678797541657e-13,
+  "feature": "Turn"
+}
